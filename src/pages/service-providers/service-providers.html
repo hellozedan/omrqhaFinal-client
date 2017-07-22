@@ -1,6 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-left></ion-title>
+  </ion-navbar>
+</ion-header>
 <!--Theme Full Image Cards-->
-<ion-content has-header>
+<ion-content has-header dir="rtl">
   <ion-grid no-padding>
+    <ion-row header-bcg padding>
+
+  <ul class="domain-container">
+    <li *ngFor="let item of domainList">
+      <div class="domain-item">
+        <div>{{item.name}}</div>
+        <img src="https://s-media-cache-ak0.pinimg.com/originals/2e/90/fc/2e90fc5c01dbc346d35e47cb92377c11.png">
+      </div>
+
+    </li>
+  
+  </ul>  
+
+
+    </ion-row>
+
     <ion-row>
       <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 *ngFor="let item of serviceProvidersList;let i = index">
         <ion-card (click)="onEvent('onItemClick', item.title, $event)">

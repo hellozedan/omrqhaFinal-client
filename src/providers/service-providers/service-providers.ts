@@ -13,6 +13,7 @@ export class ServiceProvidersProvider {
   serviceProvidersList = [{
     id:1,
     name: 'dodo',
+    domainName: 'd',
     desc: 'best d&j best d&j best d&j best d&j',
     imageUrl: 'http://howtobecomeadj.net/wp-content/uploads/how-to-become-a-dj.jpg'
   }, {
