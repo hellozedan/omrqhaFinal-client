@@ -27,7 +27,7 @@ export class ServiceProvidersProvider {
     imageUrl: 'http://howtobecomeadj.net/wp-content/uploads/how-to-become-a-dj.jpg'
   }, {
     name: 'dodo',
-    desc: 'best d&j best d&j best d&j best d&j',
+    desc: 'best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j',
     imageUrl: 'http://howtobecomeadj.net/wp-content/uploads/how-to-become-a-dj.jpg'
   }, {
     id:4,
@@ -48,5 +48,8 @@ export class ServiceProvidersProvider {
 
   getServiceProvidersList() {
     return this.serviceProvidersList;
+  }
+  getServiceProviderById(id:string) {
+    return this.serviceProvidersList[id];
   }
 }

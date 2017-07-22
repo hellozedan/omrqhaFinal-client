@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {ServiceProvidersProvider} from '../../../providers/service-providers/service-providers'
 /**
  * Generated class for the ServiceProviderPage page.
  *
@@ -13,8 +13,11 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'service-provider.html',
 })
 export class ServiceProviderPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  private providerId:string;
+  private serviceProvider:any;
+  constructor(public navCtrl: NavController, public navParams: NavParams,serviceProvidersProvider:ServiceProvidersProvider) {
+    this.providerId='3';
+    this.serviceProvider=serviceProvidersProvider.getServiceProviderById(this.providerId);
   }
 
   ionViewDidLoad() {
