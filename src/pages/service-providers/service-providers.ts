@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import {ServiceProvidersProvider} from "../../providers/service-providers/service-providers";
 import {ServiceProvider} from "../../models/service-provider/service-provider"
 import {DomainProvider} from "../../providers/domain/domain";
+import {ServiceProviderPage} from '../service-providers/service-provider/service-provider';
 
 /**
  * Generated class for the ServiceProvidersPage page.
@@ -32,6 +33,9 @@ export class ServiceProvidersPage {
   filterByDomain(domain:string){
     this.filteredServiceProvidersList = this.serviceProvidersList.filter(
       serviceProvider => serviceProvider.domainName === domain);
+  }
+  goToServiceProvider(id:string){
+    this.navCtrl.push(ServiceProviderPage)
   }
 
 }
