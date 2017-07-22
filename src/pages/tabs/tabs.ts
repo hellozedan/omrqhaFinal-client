@@ -14,8 +14,8 @@ import { ServiceProvidersProvider } from '../../providers/service-providers/serv
 export class TabsPage {
 
   homePage = HomePage;
-  // serviceProvidersPage = ServiceProvidersPage;
-  serviceProvidersPage = ServiceProviderPage;
+  serviceProvidersPage = ServiceProvidersPage;
+  //serviceProvidersPage = ServiceProviderPage;
   tasksPage = TasksPage;
   profilePage = ProfilePage;
 

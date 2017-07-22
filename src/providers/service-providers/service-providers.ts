@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Http} from '@angular/http';
 import 'rxjs/add/operator/map';
+import {SERVICE_PROVIDER_LIST} from '../../mocks/service-provider/service-provider'
 
 /*
   Generated class for the ServiceProvidersProvider provider.
@@ -10,38 +11,9 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class ServiceProvidersProvider {
-  serviceProvidersList = [{
-    id:1,
-    name: 'dodo',
-    domainName: 'd',
-    desc: 'best d&j best d&j best d&j best d&j',
-    imageUrl: 'http://howtobecomeadj.net/wp-content/uploads/how-to-become-a-dj.jpg'
-  }, {
-    id:2,
-    name: 'dodo',
-    desc: 'best d&j best d&j best d&j best d&j',
-    imageUrl: 'http://howtobecomeadj.net/wp-content/uploads/how-to-become-a-dj.jpg'
-  }, {
-    id:3,
-    name: 'dodo',
-    desc: 'best d&j best d&j best d&j best d&j',
-    imageUrl: 'http://howtobecomeadj.net/wp-content/uploads/how-to-become-a-dj.jpg'
-  }, {
-    name: 'dodo',
-    desc: 'best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j best d&j',
-    imageUrl: 'http://howtobecomeadj.net/wp-content/uploads/how-to-become-a-dj.jpg'
-  }, {
-    id:4,
-    name: 'dodo',
-    desc: 'best d&j best d&j best d&j best d&j',
-    imageUrl: 'http://howtobecomeadj.net/wp-content/uploads/how-to-become-a-dj.jpg'
-  }, {
-    id:5,
-    name: 'dodo',
-    desc: 'best d&j best d&j best d&j best d&j',
-    imageUrl: 'http://howtobecomeadj.net/wp-content/uploads/how-to-become-a-dj.jpg'
-  }]
 
+
+  serviceProvidersList = SERVICE_PROVIDER_LIST;
   constructor() {
 
     // console.log('Hello ServiceProvidersProvider Provider');

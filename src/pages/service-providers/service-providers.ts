@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import {ServiceProvidersProvider} from "../../providers/service-providers/service-providers";
+import {ServiceProvider} from "../../models/service-provider/service-provider"
 import {DomainProvider} from "../../providers/domain/domain";
 
 /**
@@ -15,7 +16,9 @@ import {DomainProvider} from "../../providers/domain/domain";
   templateUrl: 'service-providers.html',
 })
 export class ServiceProvidersPage {
-  serviceProvidersList:any[];
+  serviceProvidersList :ServiceProvider[];
+  filteredServiceProvidersList: ServiceProvider[];
+
   domainList: any[];
   constructor(public navCtrl: NavController, public navParams: NavParams,serviceProvidersProvider:ServiceProvidersProvider, domainProvider: DomainProvider) {
     this.serviceProvidersList=serviceProvidersProvider.getServiceProvidersList();
@@ -24,6 +27,11 @@ export class ServiceProvidersPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ServiceProvidersPage');
+  }
+
+  filterByDomain(domain:string){
+    this.filteredServiceProvidersList = this.serviceProvidersList.filter(
+      serviceProvider => serviceProvider.domainName === domain);
   }
 
 }
