@@ -11,6 +11,17 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class ServiceProvidersProvider {
   serviceProvidersList = [{
+    id:1,
+    name: 'dodo',
+    desc: 'best d&j best d&j best d&j best d&j',
+    imageUrl: 'http://howtobecomeadj.net/wp-content/uploads/how-to-become-a-dj.jpg'
+  }, {
+    id:2,
+    name: 'dodo',
+    desc: 'best d&j best d&j best d&j best d&j',
+    imageUrl: 'http://howtobecomeadj.net/wp-content/uploads/how-to-become-a-dj.jpg'
+  }, {
+    id:3,
     name: 'dodo',
     desc: 'best d&j best d&j best d&j best d&j',
     imageUrl: 'http://howtobecomeadj.net/wp-content/uploads/how-to-become-a-dj.jpg'
@@ -19,18 +30,12 @@ export class ServiceProvidersProvider {
     desc: 'best d&j best d&j best d&j best d&j',
     imageUrl: 'http://howtobecomeadj.net/wp-content/uploads/how-to-become-a-dj.jpg'
   }, {
+    id:4,
     name: 'dodo',
     desc: 'best d&j best d&j best d&j best d&j',
     imageUrl: 'http://howtobecomeadj.net/wp-content/uploads/how-to-become-a-dj.jpg'
   }, {
-    name: 'dodo',
-    desc: 'best d&j best d&j best d&j best d&j',
-    imageUrl: 'http://howtobecomeadj.net/wp-content/uploads/how-to-become-a-dj.jpg'
-  }, {
-    name: 'dodo',
-    desc: 'best d&j best d&j best d&j best d&j',
-    imageUrl: 'http://howtobecomeadj.net/wp-content/uploads/how-to-become-a-dj.jpg'
-  }, {
+    id:5,
     name: 'dodo',
     desc: 'best d&j best d&j best d&j best d&j',
     imageUrl: 'http://howtobecomeadj.net/wp-content/uploads/how-to-become-a-dj.jpg'
